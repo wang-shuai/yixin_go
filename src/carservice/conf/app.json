@@ -1,0 +1,14 @@
+{
+  "redis": {
+    "host": "192.168.145.3",
+    "port": 6379,
+    "db": 0,
+    "readTimeout": 3,
+    "poolSize": 10,
+    "password": ""
+  },
+  "db":{
+    "schema": "mssql",
+    "connectionString": "odbc:server=192.168.151.56\\SERVER14;user id=sa;password={1234.abcd};database=Finance;connection timeout=30"
+  }
+}
