@@ -33,3 +33,21 @@ func TestCarService_GetCarBaseInfoWithImgSize(t *testing.T) {
 	car,err:= srv.GetCarBaseInfoWithImgSize(122123,7)
 	fmt.Println(car,err)
 }
+
+func TestCarService_GetCarMBrandAndInitials(t *testing.T) {
+	src := new(CarService)
+	data,err:= src.GetCarMBrandGroupByInitials(true)
+	fmt.Println(data,err)
+}
+
+func TestCarService_GetCarSelectorMasterBrandList(t *testing.T) {
+	srv := new (CarService)
+	data,err:= srv.GetCarSelectorMasterBrandList(true,true,"1008")
+	fmt.Println(data,"\n\r",err)
+}
+
+func TestCarService_GetCarSerialListWithMBrand(t *testing.T) {
+	srv := new (CarService)
+	data,err:= srv.GetCarSerialListWithMBrand(5,true,true,"1008")
+	fmt.Println(data,"\n\r",err)
+}

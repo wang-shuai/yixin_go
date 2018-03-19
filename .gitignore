@@ -1,4 +1,6 @@
 
-/.idea
-/.vscode
-/pkg
+src/.idea
+.vscode
+pkg
+src/.idea/workspace.xml
+src/.idea/src.iml
